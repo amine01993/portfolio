@@ -1,0 +1,18 @@
+{
+    "Home": "Accueil",
+    "About": "À propos",
+    "Contact": "Contact",
+    "Projects": "Projets",
+    "I am {fullname}": "Je suis {fullname}",
+    "home.description": "Professionnel du développement Web avec une vaste expérience dans le développement front-end et back-end, spécialisé dans la conception réactive et l'optimisation de sites Web. J'ai réussi à réduire les temps de chargement et à améliorer les performances du site grâce à une mise en cache efficace et à l'optimisation des ressources tout en adhérant aux meilleures pratiques de référencement. Ingénieux et capable de collaborer avec d'autres équipes pour résoudre des problèmes techniques complexes",
+    "See more": "Voir plus",
+    "About me": "À propos de moi",
+    "Experience": "Expérience",
+    "Web developer": "Développeur Web",
+    "Fullstack developer": "Développeur Full Stack",
+    "work2.exp": "Amélioration d'une expérience utilisateur grâce à la mise en œuvre d'une conception Web réactive et à l'optimisation des performances du site Web.<br>Résolution rapide des problèmes techniques, garantissant une perturbation minimale.<br>Amélioration de la vitesse du site en optimisant les images, les scripts et d'autres ressources.<br>Réduction de la charge du serveur et amélioration des temps de réponse des pages grâce à la mise en œuvre de stratégies de mise en cache efficaces.",
+    "work1.exp": "Révision du code, résolution des problèmes et correction des erreurs.<br>Résolution des problèmes techniques complexes.<br>Réduction des temps de chargement des pages Web pour améliorer l'engagement des utilisateurs à l'aide d'un code optimisé et de requêtes de base de données efficaces.<br>Encadrement de développeurs juniors pour les aider à commencer à travailler sur certaines fonctionnalités sans délai.",
+    "Education": "Éducation",
+    "Master's degree in Mathematics and Computer Engineering": "Master en Génie Mathématiques et Informatique",
+    "Email directly to {email}": "Envoyez un e-mail directement à {email}"
+}

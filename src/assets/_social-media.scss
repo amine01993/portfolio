@@ -1,0 +1,48 @@
+
+@use "@/assets/variables";
+
+.social-media-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+
+    .media-item {
+        a {
+            color: variables.$link-color-light;
+
+            @media (min-width: variables.$max-mobile-width) {
+                color: unset;
+            }
+        }
+    }
+
+    @media (min-width: variables.$max-mobile-width) {
+        background-color: unset;
+        justify-content: unset;
+        gap: 5vh;
+        margin-left: 40px;
+        position: unset;
+        width: unset;
+        transform: none;
+        backdrop-filter: unset;
+    }
+}
+
+
+.dark-theme {
+    .social-media-links {
+        .media-item {
+            a {
+                color: variables.$link-color-dark;
+
+                @media (min-width: variables.$max-mobile-width) {
+                    color: unset;
+                }
+            }
+        }
+    }
+}

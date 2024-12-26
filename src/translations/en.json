@@ -1,0 +1,18 @@
+{
+    "Home": "Home",
+    "About": "About",
+    "Contact": "Contact",
+    "Projects": "Projects",
+    "I am {fullname}": "I am {fullname}",
+    "home.description": "Web Development professional with extensive experience in front-end and back-end development, specializing in responsive design and website optimization. Successfully reduced load times and improved site performance through efficient caching and asset optimization while adhering to SEO best practices. Resourceful and can collaborate with other teams to resolve complex technical issues",
+    "See more": "See more",
+    "About me": "About me",
+    "Experience": "Experience",
+    "Web developer": "Web developer",
+    "Fullstack developer": "Fullstack developer",
+    "work2.exp": "Enhanced user experience by implementing responsive web design and optimizing website performance.<br>Resolved technical issues promptly, ensuring minimal disruption.<br>Improved site speed by optimizing images, scripts, and other assets.<br>Reduced server load and improved page response times by implementing efficient caching strategies.",
+    "work1.exp": "Reviewed code, debugged problems, and corrected issues.<br>Troubleshot and resolved complex technical issues.<br>Reduced load times for web pages to enhance user engagement using optimized code and efficient database queries.<br>Mentored Junior developers to help them start working on certain features without delay.",
+    "Education": "Education",
+    "Master's degree in Mathematics and Computer Engineering": "Master's degree in Mathematics and Computer Engineering",
+    "Email directly to {email}": "Email directly to {email}"
+}

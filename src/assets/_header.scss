@@ -1,0 +1,140 @@
+
+@use "@/assets/variables";
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+
+    .logo {
+        width: 110px;
+        padding-left: 40px;
+
+        img {
+            width: 80px;
+            margin-top: 13px;
+            margin-left: 5px;
+
+            @media (min-width: variables.$max-mobile-width) {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .menu {
+        display: none;
+
+        @media (min-width: variables.$max-mobile-width) {
+            display: flex;
+            gap: 5vh;
+            margin-right: 40px;
+            align-items: center;
+    
+            .menu-item {
+                a {
+                    color: variables.$txt-color-light;
+                    text-decoration: none;
+
+                    &.highlighted {
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-underline-offset: .5em;
+                        text-decoration-thickness: 0.2rem;
+                        text-decoration-color: variables.$txt-highlight-light;
+                    }
+                }
+
+                .theme, .locale {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .open-menu {
+        font-size: 40px;
+        width: 110px;
+        padding-right: 40px;
+        text-align: right;
+
+        @media (min-width: variables.$max-mobile-width) {
+            display: none;
+        }
+    }
+
+    &.open {
+        .menu {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            padding-top: 15vh;
+    
+            .menu-item {
+                a {
+                    color: variables.$txt-color-light;
+                    text-decoration: none;
+
+                    &.highlighted {
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-underline-offset: .5em;
+                        text-decoration-thickness: 0.2rem;
+                        text-decoration-color: variables.$txt-highlight-light;
+                    }
+                }
+
+                .theme, .locale {
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .close-menu {
+            font-size: 40px;
+            width: 110px;
+            padding-right: 40px;
+            text-align: right;
+            display: block;
+        }
+
+        .open-menu {
+            display: none;
+        }
+    }
+}
+
+.dark-theme {
+    .app-header {
+        .menu {
+            @media (min-width: variables.$max-mobile-width) {
+                .menu-item {
+                    a {
+                        color: variables.$txt-color-dark;
+                        &.highlighted {
+                            text-decoration-color: variables.$txt-highlight-dark;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &.open {
+            .menu {
+                .menu-item {
+                    a {
+                        color: variables.$txt-color-dark;
+                        &.highlighted {
+                            text-decoration-color: variables.$txt-highlight-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

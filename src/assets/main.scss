@@ -1,0 +1,32 @@
+
+@use "@/assets/variables";
+
+@use "~bootstrap/scss/bootstrap";
+@use "~bootstrap-icons/font/bootstrap-icons" with (
+	$bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts"
+);
+
+@use '@/assets/header';
+
+body {
+	background-color: variables.$bg-color-light;
+	color: variables.$txt-color-light;
+	font-size: 1.2em;
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-style: normal;
+
+	.app-link {
+		color: variables.$link-color-light;
+	}
+
+	&.dark-theme {
+		background-color: variables.$bg-color-dark;
+		color: variables.$txt-color-dark;
+
+		.app-link {
+			color: variables.$link-color-dark;
+		}
+	}
+}
+

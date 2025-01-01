@@ -38,6 +38,7 @@ const { open } = useMainStore();
             <div class="item-label">Livewire</div>
             <div class="item-label">Alpine</div>
             <div class="item-label">MySQL</div>
+            <div class="item-label">Redis</div>
         </div>
 
         <div class="section-period">
@@ -50,6 +51,7 @@ const { open } = useMainStore();
         <div class="section-labels">
             <div class="item-label">C#</div>
             <div class="item-label">ASP.NET</div>
+            <div class="item-label">Redis</div>
             <div class="item-label">Javascript</div>
             <div class="item-label">HTML</div>
             <div class="item-label">CSS</div>

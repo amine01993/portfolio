@@ -26,7 +26,7 @@ if(route.params.locale && typeof route.params.locale === 'string') {
 <template>
     <div class="app-header" :class="{'open': open}">
         <div class="logo">
-            <RouterLink :to="{name: 'home'}" @click="closeMenu">
+            <RouterLink :to="{name: 'home', params: {locale: locale === 'en' ? '' : locale}}" @click="closeMenu">
                 <img src="@/assets/portfolio-logo.svg" v-if="theme === 'light'">
                 <img src="@/assets/portfolio-logo-dark.svg" v-else>
             </RouterLink>

@@ -12,7 +12,7 @@ const { open } = useMainStore();
 <template>
   <AppHeader />
   
-  <div class="app-main home-page" v-if="!open">
+  <div class="app-main" v-if="!open">
     <h1 class="main-title">
       {{ t('I am {fullname}', { fullname: 'Amine Errafii' }) }}
     </h1>

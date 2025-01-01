@@ -44,6 +44,7 @@ export const useMainStore = defineStore('main', () => {
         if(locale.value === 'en') locale.value = 'fr';
         else locale.value = 'en';
         const _locale = locale.value === 'en' ? '' : 'fr';
+        console.log('toggleLocale', _locale);
         router.push({ name: route.name, params: {locale: _locale} });
     }
 

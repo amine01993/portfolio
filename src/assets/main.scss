@@ -16,6 +16,13 @@ body {
 	font-weight: 400;
 	font-style: normal;
 
+	.app-main {
+		margin-top: 10vh;
+		@media (min-width: variables.$max-mobile-width) {
+			margin: 10vh 20vh 0 20vh;
+		}
+	}
+
 	.app-link {
 		color: variables.$link-color-light;
 	}

@@ -27,8 +27,7 @@ const { open } = useMainStore();
 @use "@/assets/variables";
 
 .app-main {
-    margin-top: 10vh;
-
+    
     .main-title {
         margin: 0 20px;
         font-size: 1.6em;

@@ -58,7 +58,7 @@ const { open } = useMainStore();
             <div class="item-label">Mustache JS</div>
             <div class="item-label">JQuery</div>
             <div class="item-label">Bootstrap</div>
-            <div class="item-label">Sybase SQL Anywhere</div>
+            <div class="item-label">Microsoft SQL Server</div>
             <div class="item-label">RabbitMq</div>
         </div>
 

@@ -27,12 +27,31 @@ body {
 		color: variables.$link-color-light;
 	}
 
+	.custom-cursor-pointer {
+		position: fixed;
+		user-select: none;
+		pointer-events: none;
+		will-change: transform;
+		width: 40vh;
+		height: 40vh;
+		z-index: -1;
+		background: radial-gradient(circle, rgba(29, 53, 87, 0.07) 10%, rgba(255, 255, 255, 0.8) 70%);
+		display: none;
+		@media (min-width: variables.$max-mobile-width) {
+			display: block;
+		}
+	}
+
 	&.dark-theme {
 		background-color: variables.$bg-color-dark;
 		color: variables.$txt-color-dark;
 
 		.app-link {
 			color: variables.$link-color-dark;
+		}
+
+		.custom-cursor-pointer {
+			background: radial-gradient(circle, rgba(255, 255, 255, .1) 10%, rgba(0, 0, 0, .8) 80%);
 		}
 	}
 }

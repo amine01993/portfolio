@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import SocialMedia from '../components/SocialMedia.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useMainStore } from '@/stores/main';
+import AppFooter from '@/components/AppFooter.vue';
 
 const { t } = useI18n();
 const { open } = useMainStore();
@@ -70,17 +70,18 @@ const { open } = useMainStore();
         </div>
         <!-- <div class="about-link">
         <a href="#">See more</a>
-        </div> -->
-
-        <SocialMedia />
+        </div>
+         -->
     </div>
+
+    <AppFooter v-if="!open"/>
 </template>
 
 <style lang="scss" scoped>
 @use "@/assets/variables";
 
 .app-main {
-    margin-bottom: 50px;
+    margin-bottom: calc(3vh + 10px + 75px);
 
     .main-title {
         margin: 0 20px;

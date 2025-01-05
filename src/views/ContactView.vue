@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import SocialMedia from '../components/SocialMedia.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useMainStore } from '@/stores/main';
+import AppFooter from '@/components/AppFooter.vue';
 
 const { t } = useI18n();
 const { open } = useMainStore();
@@ -18,9 +18,9 @@ const { open } = useMainStore();
         </h1>
 
         <p class="main-text" v-html="t('Email directly to {email}', { email: '<a class=\'app-link\' href=\'mailto:err.amine93@gmail.com\'>err.amine93@gmail.com</a>' })"></p>
-
-        <SocialMedia />
     </div>
+
+    <AppFooter v-if="!open" />
 </template>
 
 <style lang="scss" scoped>

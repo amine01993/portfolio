@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import SocialMedia from '../components/SocialMedia.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useMainStore } from '@/stores/main';
+import AppFooter from '@/components/AppFooter.vue';
 
 const { t, locale } = useI18n({ useScope: 'global' });
 const { open } = useMainStore();
@@ -24,9 +24,9 @@ const { open } = useMainStore();
     <div class="about-link">
       <RouterLink class="app-link" :to="{name: 'about', params: {locale: locale === 'en' ? '' : locale}}">{{ t('See more') }}</RouterLink>
     </div>
-
-    <SocialMedia />
   </div>
+
+  <AppFooter v-if="!open" />
 </template>
 
 <style lang="scss" scoped>

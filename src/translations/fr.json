@@ -14,5 +14,6 @@
     "work1.exp": "Révision du code, résolution des problèmes et correction des erreurs.<br>Résolution des problèmes techniques complexes.<br>Réduction des temps de chargement des pages Web pour améliorer l'engagement des utilisateurs à l'aide d'un code optimisé et de requêtes de base de données efficaces.<br>Encadrement de développeurs juniors pour les aider à commencer à travailler sur certaines fonctionnalités sans délai.",
     "Education": "Éducation",
     "Master's degree in Mathematics and Computer Engineering": "Master en Génie Mathématiques et Informatique",
-    "Email directly to {email}": "Envoyez un e-mail directement à {email}"
+    "Email directly to {email}": "Envoyez un e-mail directement à {email}",
+    "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.": "Conçu librement dans {figma} et codé dans {vscode} par mes soins. Créé avec {vue} et {bootstrap}."
 }

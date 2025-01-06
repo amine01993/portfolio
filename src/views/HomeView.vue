@@ -10,23 +10,23 @@ const { open } = useMainStore();
 </script>
 
 <template>
-  <AppHeader />
-  
-  <div class="app-main" v-if="!open">
-    <h1 class="main-title">
-      {{ t('I am {fullname}', { fullname: 'Amine Errafii' }) }}
-    </h1>
+    <AppHeader />
+    
+    <div class="app-main" v-if="!open">
+        <h1 class="main-title">
+            {{ t('I am {fullname}', { fullname: 'Amine Errafii' }) }}
+        </h1>
 
-    <p class="main-text">
-      {{ t('home.description') }}
-    </p>
+        <p class="main-text">
+            {{ t('home.description') }}
+        </p>
 
-    <div class="about-link">
-      <RouterLink class="app-link" :to="{name: 'about', params: {locale: locale === 'en' ? '' : locale}}">{{ t('See more') }}</RouterLink>
+        <div class="about-link">
+            <RouterLink class="app-link" :to="{name: 'about', params: {locale: locale === 'en' ? '' : locale}}">{{ t('See more') }}</RouterLink>
+        </div>
     </div>
-  </div>
 
-  <AppFooter v-if="!open" />
+    <AppFooter v-if="!open" />
 </template>
 
 <style lang="scss" scoped>

@@ -68,10 +68,6 @@ const { open } = useMainStore();
         <div class="section-position">
             {{ t('Master\'s degree in Mathematics and Computer Engineering') }}
         </div>
-        <!-- <div class="about-link">
-        <a href="#">See more</a>
-        </div>
-         -->
     </div>
 
     <AppFooter v-if="!open"/>

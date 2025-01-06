@@ -28,12 +28,12 @@ if(route.params.locale && typeof route.params.locale === 'string') {
     transform: translate(-50%, -50%);
 
     .nf-code {
-        padding: 1vh 2vh;
+        padding: 1vh 2vh 1vh 0;
     }
 
     .nf-message {
         border-left: 2px solid variables.$txt-highlight-light;
-        padding: 1vh 2vh;
+        padding: 1vh 0 1vh 2vh;
     }
 }
 

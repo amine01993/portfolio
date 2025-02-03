@@ -38,9 +38,9 @@ if(route.params.locale && typeof route.params.locale === 'string') {
             <div class="menu-item">
                 <RouterLink exactActiveClass="highlighted" :to="{name: 'about', params: {locale: locale === 'en' ? '' : locale}}" @click="closeMenu">{{ t('About') }}</RouterLink>
             </div>
-            <!-- <div class="menu-item">
-                {{ t('Projects') }}
-            </div> -->
+            <div class="menu-item">
+                <RouterLink exactActiveClass="highlighted" :to="{name: 'projects', params: {locale: locale === 'en' ? '' : locale}}" @click="closeMenu">{{ t('Projects') }}</RouterLink>
+            </div>
             <div class="menu-item">
                 <RouterLink exactActiveClass="highlighted" :to="{name: 'contact', params: {locale: locale === 'en' ? '' : locale}}" @click="closeMenu">{{ t('Contact') }}</RouterLink>
             </div>

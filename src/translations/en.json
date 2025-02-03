@@ -16,5 +16,7 @@
     "Master's degree in Mathematics and Computer Engineering": "Master's degree in Mathematics and Computer Engineering",
     "Email directly to {email}": "Email directly to {email}",
     "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.": "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.",
-    "This page could not be found.": "This page could not be found."
+    "This page could not be found.": "This page could not be found.",
+    "Test Builder": "Test Builder",
+    "test-builder.description": "A Web App for creating customized Tests and sharing them with others through a unique link, while keeping track of all test results."
 }

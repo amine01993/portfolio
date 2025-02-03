@@ -16,5 +16,7 @@
     "Master's degree in Mathematics and Computer Engineering": "Master en Génie Mathématiques et Informatique",
     "Email directly to {email}": "Envoyez un e-mail directement à {email}",
     "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.": "Conçu librement dans {figma} et codé dans {vscode} par mes soins. Créé avec {vue} et {bootstrap}.",
-    "This page could not be found.": "Cette page n'a pas pu être trouvée."
+    "This page could not be found.": "Cette page n'a pas pu être trouvée.",
+    "Test Builder": "Générateur de Tests",
+    "test-builder.description": "Une application Web pour créer des tests personnalisés et les partager avec d'autres via un lien unique, tout en gardant une trace de tous les résultats des tests."
 }

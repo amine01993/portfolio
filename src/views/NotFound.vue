@@ -22,6 +22,7 @@ if(route.params.locale && typeof route.params.locale === 'string') {
 
 .nf-container {
     display: flex;
+    align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import AppHeader from '../components/AppHeader.vue';
 import { useMainStore } from '@/stores/main';
+import AppHeader from '../components/AppHeader.vue';
 import AppFooter from '@/components/AppFooter.vue';
 
 const { t } = useI18n();
@@ -45,7 +45,7 @@ const { open } = useMainStore();
             2019 — 2021
         </div>
         <div class="section-position">
-            <a href="https://www.synchroteam.com/" target="_blank">{{ t('Fullstack developer') }} <i class="bi bi-arrow-up-right"></i></a>
+            {{ t('Fullstack developer') }}
         </div>
         <p class="main-text" v-html="t('work1.exp')"></p>
         <div class="section-labels">

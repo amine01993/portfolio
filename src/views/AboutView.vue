@@ -27,19 +27,6 @@ const { open } = useMainStore();
             <a href="https://www.filovent.com/" target="_blank">{{ t('Web developer') }} <i class="bi bi-arrow-up-right"></i></a>
         </div>
         <p class="main-text" v-html="t('work2.exp')"></p>
-        <div class="section-labels">
-            <div class="item-label">PHP</div>
-            <div class="item-label">Laravel</div>
-            <div class="item-label">Vue</div>
-            <div class="item-label">Javascript</div>
-            <div class="item-label">HTML</div>
-            <div class="item-label">CSS</div>
-            <div class="item-label">Tailwind</div>
-            <div class="item-label">Livewire</div>
-            <div class="item-label">Alpine</div>
-            <div class="item-label">MySQL</div>
-            <div class="item-label">Redis</div>
-        </div>
 
         <div class="section-period">
             2019 — 2021
@@ -48,19 +35,6 @@ const { open } = useMainStore();
             {{ t('Fullstack developer') }}
         </div>
         <p class="main-text" v-html="t('work1.exp')"></p>
-        <div class="section-labels">
-            <div class="item-label">C#</div>
-            <div class="item-label">ASP.NET</div>
-            <div class="item-label">Redis</div>
-            <div class="item-label">Javascript</div>
-            <div class="item-label">HTML</div>
-            <div class="item-label">CSS</div>
-            <div class="item-label">Mustache JS</div>
-            <div class="item-label">JQuery</div>
-            <div class="item-label">Bootstrap</div>
-            <div class="item-label">Microsoft SQL Server</div>
-            <div class="item-label">RabbitMq</div>
-        </div>
 
         <div class="section-title">
             {{ t('Education') }}

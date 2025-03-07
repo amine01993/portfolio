@@ -32,6 +32,7 @@ const {t} = useI18n();
         </div>
         <div class="links">
             <a href="https://github.com/amine01993/test-builder-vue" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://test-builder-api.web.app/" target="_blank"><i class="bi bi-globe2"></i></a>
         </div>
     </div>
 </template>

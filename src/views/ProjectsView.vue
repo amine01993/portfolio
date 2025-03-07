@@ -95,9 +95,13 @@ const { open } = useMainStore();
             }
 
             .links {
+                display: flex;
+                gap: 10px;
+                
                 a {
                     color: vars.$txt-color-light;
                     font-size: 1.2em;
+                    padding: 5px;
                 }
             }
         }

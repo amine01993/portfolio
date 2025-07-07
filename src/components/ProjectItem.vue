@@ -1,38 +1,51 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
+import { useMainStore } from '@/stores/main'
+import { computed } from 'vue'
 
-const {t} = useI18n();
+const { theme } = useMainStore()
+const { project } = defineProps<{
+    project: {
+        title: string
+        description: string
+        imgSrc: string
+        imgSrcDark?: string
+        alt: string
+        techStack: string[]
+        links: {
+            github: string
+            githubIcon: string
+            live: string
+            liveIcon: string
+        }
+    }
+}>()
+
+const imgSrc = computed(() =>
+    theme.value === 'dark' && project.imgSrcDark ? project.imgSrcDark : project.imgSrc,
+)
 </script>
 
 <template>
     <div class="project">
         <div class="img">
-            <img src="@/assets/projects/test-builder-img.webp" :alt="t('Test Builder Screenshot')" />
+            <img :src="imgSrc" :alt="project.alt" />
         </div>
         <div class="title">
-            {{ t('Test Builder') }}
+            {{ project.title }}
         </div>
         <div class="description">
-            {{ t('test-builder.description') }}
+            {{ project.description }}
         </div>
         <div class="tech-stack">
-            <div class="item">Vite</div>
-            <div class="item">Vue</div>
-            <div class="item">Pinia</div>
-            <div class="item">Bootstrap</div>
-            <div class="item">Firebase</div>
-            <div class="item">Firestore</div>
-            <div class="item">Cloud Functions</div>
-            <div class="item">Express</div>
-            <div class="item">HTML</div>
-            <div class="item">CSS</div>
-            <div class="item">SCSS</div>
-            <div class="item">Javascript</div>
-            <div class="item">Typescript</div>
+            <div class="item" v-for="tech in project.techStack" :key="tech">{{ tech }}</div>
         </div>
         <div class="links">
-            <a href="https://github.com/amine01993/test-builder-vue" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://test-builder-api.web.app/" target="_blank"><i class="bi bi-globe2"></i></a>
+            <a :href="project.links.github" target="_blank"
+                ><i :class="project.links.githubIcon"></i
+            ></a>
+            <a :href="project.links.live" target="_blank"
+                ><i :class="project.links.liveIcon"></i
+            ></a>
         </div>
     </div>
 </template>

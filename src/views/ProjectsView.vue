@@ -1,35 +1,93 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
-import { useMainStore } from '@/stores/main';
-import AppHeader from '../components/AppHeader.vue';
-import AppFooter from '@/components/AppFooter.vue';
-import ProjectItem from '@/components/ProjectItem.vue';
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useMainStore } from '@/stores/main'
+import AppHeader from '../components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import ProjectItem from '@/components/ProjectItem.vue'
 
-const { t } = useI18n();
-const { open } = useMainStore();
+const { t } = useI18n()
+const { open } = useMainStore()
 
+const projectList = computed(() => [
+    {
+        title: t('Jigsaw Puzzle'),
+        description: t('jigsaw-puzzle.description'),
+        imgSrc: new URL(`@/assets/projects/jigsaw-puzzle-img.webp`, import.meta.url).toString(),
+        imgSrcDark: new URL(
+            `@/assets/projects/jigsaw-puzzle-img-dark.webp`,
+            import.meta.url,
+        ).toString(),
+        alt: t('Jigsaw Puzzle Screenshot'),
+        techStack: [
+            'Typescript',
+            'React',
+            'HTML',
+            'CSS',
+            'Tailwind CSS',
+            'Motion',
+            'React DnD',
+            'React Icons',
+            'Canvas',
+            'Web Workers',
+            'React Router',
+        ],
+        links: {
+            github: 'https://github.com/amine01993/jigsaw',
+            githubIcon: 'bi bi-github',
+            live: 'https://jigsaw-two.vercel.app/',
+            liveIcon: 'bi bi-globe2',
+        },
+    },
+    {
+        title: t('Test Builder'),
+        description: t('test-builder.description'),
+        imgSrc: new URL(`@/assets/projects/test-builder-img.webp`, import.meta.url).toString(),
+        alt: t('Test Builder Screenshot'),
+        techStack: [
+            'Vite',
+            'Vue',
+            'Pinia',
+            'Bootstrap',
+            'Firebase',
+            'Firestore',
+            'Cloud Functions',
+            'Express',
+            'HTML',
+            'CSS',
+            'SCSS',
+            'Javascript',
+            'Typescript',
+        ],
+        links: {
+            github: 'https://github.com/amine01993/test-builder-vue',
+            githubIcon: 'bi bi-github',
+            live: 'https://test-builder-api.web.app/',
+            liveIcon: 'bi bi-globe2',
+        },
+    },
+])
 </script>
 
 <template>
     <AppHeader />
-    
+
     <div class="app-main" v-if="!open">
         <h1 class="main-title">
             {{ t('Projects') }}
         </h1>
 
         <div class="project-list">
-            <ProjectItem />
+            <ProjectItem v-for="project in projectList" :key="project.title" :project="project" />
         </div>
-        
     </div>
 
-    <AppFooter v-if="!open"/>
+    <AppFooter v-if="!open" />
 </template>
 
 <style lang="scss" scoped>
-@use "sass:string";
-@use "@/assets/variables" as vars;
+@use 'sass:string';
+@use '@/assets/variables' as vars;
 
 .app-main {
     margin-bottom: calc(3vh + 10px + 75px);
@@ -53,7 +111,7 @@ const { open } = useMainStore();
             display: flex;
             flex-direction: column;
             gap: 2vh;
-            box-shadow: string.unquote(vars.$txt-highlight-light + '1f')  0px 0px 1rem 1rem;
+            box-shadow: string.unquote(vars.$txt-highlight-light + '1f') 0px 0px 1rem 1rem;
             padding: 2vh;
             border-radius: 1rem;
 
@@ -77,7 +135,7 @@ const { open } = useMainStore();
             }
 
             .description {
-                font-size: .9em;
+                font-size: 0.9em;
             }
 
             .tech-stack {
@@ -97,7 +155,7 @@ const { open } = useMainStore();
             .links {
                 display: flex;
                 gap: 10px;
-                
+
                 a {
                     color: vars.$txt-color-light;
                     font-size: 1.2em;
@@ -114,10 +172,9 @@ const { open } = useMainStore();
 
 .dark-theme {
     .app-main {
-
         .project-list {
             :deep(.project) {
-                box-shadow: string.unquote(vars.$txt-highlight-dark + '1f')  0px 0px 1rem 1rem;
+                box-shadow: string.unquote(vars.$txt-highlight-dark + '1f') 0px 0px 1rem 1rem;
 
                 .tech-stack {
                     .item {
@@ -134,5 +191,4 @@ const { open } = useMainStore();
         }
     }
 }
-
 </style>

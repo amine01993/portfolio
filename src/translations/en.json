@@ -17,6 +17,12 @@
     "Email directly to {email}": "Email directly to {email}",
     "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.": "Loosely designed in {figma} and coded in {vscode} by yours truly. Built with {vue} and {bootstrap}.",
     "This page could not be found.": "This page could not be found.",
+
     "Test Builder": "Test Builder",
-    "test-builder.description": "A Web App for creating customized Tests and sharing them with others through a unique link, while keeping track of all test results."
+    "test-builder.description": "A Web App for creating customized Tests and sharing them with others through a unique link, while keeping track of all test results.",
+    "Test Builder Screenshot": "Test Builder Screenshot",
+
+    "Jigsaw Puzzle": "Jigsaw Puzzle",
+    "jigsaw-puzzle.description": "A web-based jigsaw puzzle game that allows users to play and enjoy a variety of puzzles.",
+    "Jigsaw Puzzle Screenshot": "Jigsaw Puzzle Screenshot"
 }
